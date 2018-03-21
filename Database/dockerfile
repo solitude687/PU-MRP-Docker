@@ -1,0 +1,7 @@
+FROM mongo
+
+MAINTAINER chinonso.obiora@gmail.com
+
+COPY drop/* /tmp/
+
+CMD ["mongod", "--smallfiles", "--rest"]
